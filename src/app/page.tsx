@@ -10,12 +10,12 @@ async function Images() {
   return (
     <div className="flex flex-wrap justify-center gap-4">
       {images.map((image) => (
-        <div key={image.id} className="flex h-48 w-48 flex-col">
+        <div key={image.id} className="flex h-56 w-56 flex-col">
           <Image
             src={image.url}
             alt={image.name}
-            width={192}
-            height={192}
+            width={224}
+            height={224}
             className="object-cover"
           />
           <div className="text-wrap">{image.name.slice(0, 10)}</div>
